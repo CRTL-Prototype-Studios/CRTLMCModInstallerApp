@@ -6,6 +6,7 @@
         <entry key="CRTLMCModInstallerApp/App.axaml" value="CRTLMCModInstallerApp.Desktop/CRTLMCModInstallerApp.Desktop.csproj" />
         <entry key="CRTLMCModInstallerApp/Views/MainView.axaml" value="CRTLMCModInstallerApp.Desktop/CRTLMCModInstallerApp.Desktop.csproj" />
         <entry key="CRTLMCModInstallerApp/Views/MainWindow.axaml" value="CRTLMCModInstallerApp.Desktop/CRTLMCModInstallerApp.Desktop.csproj" />
+        <entry key="CRTLMCModInstallerApp/Views/Startup/NewModspaceView.axaml" value="CRTLMCModInstallerApp.Desktop/CRTLMCModInstallerApp.Desktop.csproj" />
       </map>
     </option>
   </component>

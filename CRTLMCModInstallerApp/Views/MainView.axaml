@@ -15,9 +15,39 @@
     <StackPanel
         HorizontalAlignment="Center"
         VerticalAlignment="Center"
-        Orientation="Horizontal">
-        <Button>
-            <TextBlock>Hello</TextBlock>
-        </Button>
+        Orientation="Vertical">
+        <TextBlock 
+            TextAlignment="Center"
+            Classes="h3">CRTL Minecraft Mod Installer</TextBlock>
+        <TextBlock
+            TextAlignment="Center"
+            Classes="p"
+            Margin="0 0 0 30">Developed by CRTL Prototype Studios, using SukiUI</TextBlock>
+        <StackPanel 
+            HorizontalAlignment="Center"
+            VerticalAlignment="Center"
+            Orientation="Horizontal"
+            Spacing="30">
+            <Button
+                Width="180"
+                HorizontalAlignment="Center"
+                VerticalAlignment="Center"
+                Padding="20">
+                <StackPanel>
+                    <Image Source="/Assets/UI/CRTLMCMIDownloadIcon.png" MaxWidth="100" MaxHeight="100" MinWidth="20" MinHeight="20"/>
+                    <TextBlock>New Modspace</TextBlock>
+                </StackPanel>
+            </Button>
+            <Button
+                Width="180"
+                HorizontalAlignment="Center"
+                VerticalAlignment="Center"
+                Padding="20">
+                <StackPanel>
+                    <Image Source="/Assets/UI/CRTLMCMIImportIcon.png" MaxWidth="100" MaxHeight="100" MinWidth="20" MinHeight="20"/>
+                    <TextBlock>Import Modspace</TextBlock>
+                </StackPanel>
+            </Button>
+        </StackPanel>
     </StackPanel>
 </UserControl>
