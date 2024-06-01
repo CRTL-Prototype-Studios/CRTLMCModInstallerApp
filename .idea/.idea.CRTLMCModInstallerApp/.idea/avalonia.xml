@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AvaloniaProject">
+    <option name="projectPerEditor">
+      <map>
+        <entry key="CRTLMCModInstallerApp/App.axaml" value="CRTLMCModInstallerApp.Desktop/CRTLMCModInstallerApp.Desktop.csproj" />
+        <entry key="CRTLMCModInstallerApp/Views/MainView.axaml" value="CRTLMCModInstallerApp.Desktop/CRTLMCModInstallerApp.Desktop.csproj" />
+        <entry key="CRTLMCModInstallerApp/Views/MainWindow.axaml" value="CRTLMCModInstallerApp.Desktop/CRTLMCModInstallerApp.Desktop.csproj" />
+      </map>
+    </option>
+  </component>
+</project>
