@@ -1,6 +1,7 @@
 using Avalonia;
 using Avalonia.Controls.ApplicationLifetimes;
 using Avalonia.Markup.Xaml;
+using CRTLMCModInstallerApp.Core.Utility;
 using CRTLMCModInstallerApp.ViewModels;
 using CRTLMCModInstallerApp.Views;
 
@@ -17,17 +18,26 @@ public partial class App : Application
     {
         if (ApplicationLifetime is IClassicDesktopStyleApplicationLifetime desktop)
         {
-            desktop.MainWindow = new MainWindow
+            var mainWindow = new MainWindow
             {
-                DataContext = new MainViewModel()
+                DataContext = new MainWindowViewModel()
             };
+            NavigationService.MainWindowViewModel = (MainWindowViewModel)mainWindow.DataContext;
+            desktop.MainWindow = mainWindow;
         }
         else if (ApplicationLifetime is ISingleViewApplicationLifetime singleViewPlatform)
         {
-            singleViewPlatform.MainView = new MainView
+            // singleViewPlatform.MainView = new MainView
+            // {
+            //     DataContext = new MainViewModel()
+            // };
+            
+            var mainWindow = new MainWindow
             {
-                DataContext = new MainViewModel()
+                DataContext = new MainWindowViewModel()
             };
+            NavigationService.MainWindowViewModel = (MainWindowViewModel)mainWindow.DataContext;
+            singleViewPlatform.MainView = mainWindow;
         }
 
         base.OnFrameworkInitializationCompleted();

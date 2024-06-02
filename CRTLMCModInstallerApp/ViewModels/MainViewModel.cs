@@ -1,8 +1,16 @@
-﻿namespace CRTLMCModInstallerApp.ViewModels;
+﻿using System;
+using CommunityToolkit.Mvvm.Input;
+using CRTLMCModInstallerApp.Core.Utility;
+using CRTLMCModInstallerApp.ViewModels.Startup;
 
-public class MainViewModel : ViewModelBase
+namespace CRTLMCModInstallerApp.ViewModels;
+
+public partial class MainViewModel : ViewModelBase
 {
-#pragma warning disable CA1822 // Mark members as static
-    public string Greeting => "Welcome to Avalonia!";
-#pragma warning restore CA1822 // Mark members as static
+    [RelayCommand]
+    public void ToNewModspace()
+    {
+        NavigationService.SetView(new NewModspaceViewModel());
+        Console.WriteLine("Pressed");
+    }
 }

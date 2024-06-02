@@ -32,7 +32,8 @@
                 Width="180"
                 HorizontalAlignment="Center"
                 VerticalAlignment="Center"
-                Padding="20">
+                Padding="20"
+                Command="{Binding ToNewModspace}">
                 <StackPanel>
                     <Image Source="/Assets/UI/CRTLMCMIDownloadIcon.png" MaxWidth="100" MaxHeight="100" MinWidth="20" MinHeight="20"/>
                     <TextBlock>New Modspace</TextBlock>
